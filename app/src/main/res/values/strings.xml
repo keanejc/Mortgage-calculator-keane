@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mortgage-calculator-keane</string>
+    <string name="title_activity_mortgage_summary">mortgageSummary</string>
+    <string name="title_activity_payment_summary">paymentSummary</string>
+</resources>
