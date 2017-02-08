@@ -2,4 +2,15 @@
     <string name="app_name">Mortgage-calculator-keane</string>
     <string name="title_activity_mortgage_summary">mortgageSummary</string>
     <string name="title_activity_payment_summary">paymentSummary</string>
+    <string name="calculate">Calculate</string>
+    <string name="home_ins_year">Home Ins ($/year)</string>
+    <string name="home_value">Home Value</string>
+    <string name="interest_rate">Interest Rate (%)</string>
+    <string name="loan_amount">Loan Amount</string>
+    <string name="loan_term_years">Loan Term (years)</string>
+    <string name="monthly_hoa">Monthly HOA</string>
+    <string name="pmi">PMI (%)</string>
+    <string name="property_tax">Property Tax (%)</string>
+    <string name="start_date">Start Date</string>
+    <string name="home">Home</string>
 </resources>
