@@ -8,7 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    private Button calculate;
+    private Button mSum;
+    private Button pSum;
+
     private EditText homeVal;
     private EditText loan;
     private EditText interest;
@@ -23,8 +25,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
-        calculate = (Button) findViewById(R.id.button);
+        mSum = (Button) findViewById(R.id.button);
+        pSum = (Button) findViewById(R.id.button4);
+
         homeVal = (EditText) findViewById(R.id.editText);
         loan = (EditText) findViewById(R.id.editText2);
         interest = (EditText) findViewById(R.id.editText3);
@@ -38,10 +43,18 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        calculate.setOnClickListener(new View.OnClickListener() {
+        mSum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, mortgageSummary.class));
+            }
+
+        });
+
+        pSum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, paymentSummary.class));
             }
 
         });
