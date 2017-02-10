@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         string+= "Monthly Fees: " + (minsurance + mtax + HOA)+ "/n";
         string+= "Total Interest: ???" + "/n";
         string += "Total Loan Cost: ???" + "/n";
-        string += "Total Monthly Payment: ???" + "/n";
+        string += "Total Monthly Payment: ???";
 
 
         return string;
@@ -91,6 +91,15 @@ public class MainActivity extends AppCompatActivity {
 
     public String calculatePayment(){
         String string = "Monthly Vs Bi-Weekly Payment:" + "/n";
+
+        string += "Monthly Payment: ???" + "/n";
+        string += "Monthly Pay Off Date: ???" + "/n";
+        string += "Total Interest (Monthly): ???" + "/n";
+        string += "Bi-Weekly Payment: ???" + "/n";
+        string += "Bi-Weekly Payment Date: ???" + "/n";
+        string += "Total Interest (Bi-Weekly): ???";
+
+
 
         return string;
     }
