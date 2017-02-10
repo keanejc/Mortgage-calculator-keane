@@ -8,9 +8,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class mortgageSummary extends AppCompatActivity {
     private Button home;
+    private TextView view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,10 @@ public class mortgageSummary extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(mortgageSummary.this, MainActivity.class));
+                view = (TextView) findViewById(R.id.textView2);
+
+                String text = getIntent().getStringExtra("data");
+                view.setText(text);
             }
 
         });

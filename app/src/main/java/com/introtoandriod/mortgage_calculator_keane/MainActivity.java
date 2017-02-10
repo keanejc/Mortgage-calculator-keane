@@ -47,7 +47,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 calculateMortgage();
-                startActivity(new Intent(MainActivity.this, mortgageSummary.class));
+                Intent intentm = new Intent(MainActivity.this, mortgageSummary.class);
+                intentm.putExtra("data", calculateMortgage());
+                startActivity(intentm);
             }
 
         });
@@ -56,7 +58,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 calculatePayment();
-                startActivity(new Intent(MainActivity.this, paymentSummary.class));
+                Intent intentp = new Intent(MainActivity.this, paymentSummary.class);
+                intentp.putExtra("data", calculatePayment());
+                startActivity(intentp);
             }
 
         });

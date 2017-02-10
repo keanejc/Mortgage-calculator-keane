@@ -8,9 +8,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class paymentSummary extends AppCompatActivity {
     private Button home;
+    private TextView view;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +26,11 @@ public class paymentSummary extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(paymentSummary.this, MainActivity.class));
+                view = (TextView) findViewById(R.id.textView2);
+
+
+                String text = getIntent().getStringExtra("data");
+                view.setText(text);
             }
 
         });
