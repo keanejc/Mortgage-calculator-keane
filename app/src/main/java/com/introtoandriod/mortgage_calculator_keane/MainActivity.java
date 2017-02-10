@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         mSum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                calculateMortgage();
                 startActivity(new Intent(MainActivity.this, mortgageSummary.class));
             }
 
@@ -54,12 +55,26 @@ public class MainActivity extends AppCompatActivity {
         pSum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                calculatePayment();
                 startActivity(new Intent(MainActivity.this, paymentSummary.class));
             }
 
         });
 
 
+    }
+
+    public String calculateMortgage(){
+        String string = "Mortgage Repayment Summary:";
+
+        return string;
+
+    }
+
+    public String calculatePayment(){
+        String string = "Monthly Vs Bi-Weekly Payment:";
+
+        return string;
     }
 
     @Override
