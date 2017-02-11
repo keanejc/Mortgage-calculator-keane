@@ -21,16 +21,15 @@ public class paymentSummary extends AppCompatActivity {
 
 
         home = (Button) findViewById(R.id.button3);
+        view = (TextView) findViewById(R.id.textView);
+        String text = getIntent().getStringExtra("data");
+        view.setText(text);
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(paymentSummary.this, MainActivity.class));
-                view = (TextView) findViewById(R.id.textView2);
 
-
-                String text = getIntent().getStringExtra("data");
-                view.setText(text);
             }
 
         });

@@ -20,15 +20,15 @@ public class mortgageSummary extends AppCompatActivity {
         setContentView(R.layout.activity_mortgage_summary);
 
        home = (Button) findViewById(R.id.button2);
+        view = (TextView) findViewById(R.id.textView2);
+        String text = getIntent().getStringExtra("data");
+        view.setText(text);
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(mortgageSummary.this, MainActivity.class));
-                view = (TextView) findViewById(R.id.textView2);
 
-                String text = getIntent().getStringExtra("data");
-                view.setText(text);
             }
 
         });

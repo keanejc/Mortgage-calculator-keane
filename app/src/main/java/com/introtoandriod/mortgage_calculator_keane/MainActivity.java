@@ -69,19 +69,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public String calculateMortgage(){
-        String string = "Mortgage Repayment Summary:" + "/n" ;
+        String string = "Mortgage Repayment Summary:" + "\n" ;
 
         int minsurance = Integer.parseInt(insurance.getText().toString())/12;
         int ytax = Integer.parseInt(homeVal.getText().toString()) * Integer.parseInt(tax.getText().toString());
         int mtax = ytax/12;
         int HOA = Integer.parseInt(hoa.getText().toString());
 
-        string += "Monthly Insurance: "+ minsurance + "/n";
-        string+= "Yearly Tax Amount: " + ytax + "/n";
-        string+= "Monthly Tax: " + mtax + "/n";
-        string+= "Monthly Fees: " + (minsurance + mtax + HOA)+ "/n";
-        string+= "Total Interest: ???" + "/n";
-        string += "Total Loan Cost: ???" + "/n";
+        string += "Monthly Insurance: "+ minsurance + "\n";
+        string+= "Yearly Tax Amount: " + ytax + "\n";
+        string+= "Monthly Tax: " + mtax + "\n";
+        string+= "Monthly Fees: " + (minsurance + mtax + HOA)+ "\n";
+        string+= "Total Interest: ???" + "\n";
+        string += "Total Loan Cost: ???" + "\n";
         string += "Total Monthly Payment: ???";
 
 
@@ -90,13 +90,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public String calculatePayment(){
-        String string = "Monthly Vs Bi-Weekly Payment:" + "/n";
+        String string = "Monthly Vs Bi-Weekly Payment:" + "\n";
 
-        string += "Monthly Payment: ???" + "/n";
-        string += "Monthly Pay Off Date: ???" + "/n";
-        string += "Total Interest (Monthly): ???" + "/n";
-        string += "Bi-Weekly Payment: ???" + "/n";
-        string += "Bi-Weekly Payment Date: ???" + "/n";
+        string += "Monthly Payment: ???" + "\n";
+        string += "Monthly Pay Off Date: ???" + "\n";
+        string += "Total Interest (Monthly): ???" + "\n";
+        string += "Bi-Weekly Payment: ???" + "\n";
+        string += "Bi-Weekly Payment Date: ???" + "\n";
         string += "Total Interest (Bi-Weekly): ???";
 
 
